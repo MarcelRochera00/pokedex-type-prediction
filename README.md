@@ -1,8 +1,7 @@
 # Can a Pokedex entry reveal a Pokemon's type?
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b98855f5-268d-4772-a064-04b80d88a317" alt="Cohesion by type" width="650">
-</p>
+<img width="1800" height="1400" alt="cohesion_by_type" src="https://github.com/user-attachments/assets/2a2d600b-ddc4-4671-99e6-afe1c130d582" />
+
 After discovering a web-game where you have to guess a Pokemon by its Pokedex entry, I realised how ambiguous some of the Pokedex entries are. That's why, after giving it some thought, I decided to test if a Pokedex entry can reveal a Pokemon's type.
 
 Short answer: partly. Using only the text, a simple model's best guess is one of the Pokémon's real types 50.1% of the time, versus 15.7% for always guessing Water. But it depends a lot on the type: Ice, Electric and Fire entries give themselves away, while Normal, Bug and Dragon barely do.
@@ -19,9 +18,7 @@ Short answer: partly. Using only the text, a simple model's best guess is one of
 
 ### Cohesion by type
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b98855f5-268d-4772-a064-04b80d88a317" alt="Cohesion by type" width="650">
-</p>
+<img width="1800" height="1400" alt="cohesion_by_type" src="https://github.com/user-attachments/assets/60e33926-a60d-4eb2-8f7c-6191e6d1ce0f" />
 
 This chart shows how many times more often a Pokémon's text-neighbours share its type than random chance would give. Let's use an example. In total, there are 41 Ice-type Pokémon out of 898 up to Gen 8. This means that if I picked 10 random Pokémon, I would only get about 0.5 Ice Pokémon (4.6% of all Pokémon are Ice type).
 
@@ -31,17 +28,13 @@ The top of the chart is Ice (6.5), Electric (6.0) and Fire (4.9). The bottom is 
 
 ### F1 score by type
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4fc84bdd-3c31-4a8c-90eb-eb5f9ec2cc89" alt="F1 score by type" width="650">
-</p>
+<img width="1800" height="1400" alt="f1_by_type" src="https://github.com/user-attachments/assets/e49a22b3-187d-4bdb-8ff8-b23d61f27949" />
 
 Overall, the classifier's best guess is one of the Pokémon's real types 50.1% of the time (15.7% for the baseline). Per type, Electric (F1 0.69), Fire (F1 0.66) and Ice (F1 0.62) are the easiest, while Dragon (F1 0.17) and Dark (F1 0.20) are the hardest. Two very different measurements agree on which types are easy and which are hard. The results are also similar across generations (between 38% and 56% per generation), so no single generation is carrying the result.
 
 ### Which types sound alike?
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/903dcb61-a508-4d9e-823a-601ba5983fd7" alt="Type similarity" width="600">
-</p>
+<img width="1800" height="1600" alt="type_similarity" src="https://github.com/user-attachments/assets/94510842-03ba-438d-aa75-a81790967369" />
 
 This is another graph that makes a lot of sense when you start to look into it. It shows the similarity score between types. Obviously, a type is 100% (1) similar to itself, but the interesting part is which pairs of different types are the most mixed up: Rock and Ground, Rock and Steel, Fairy and Psychic, and finally Ghost and Psychic. Honestly, these are all answers that make sense: I still get Rock and Ground mixed up to this day.
 
