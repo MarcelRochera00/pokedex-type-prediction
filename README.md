@@ -60,7 +60,7 @@ This is another graph that makes a lot of sense when you start to look into it. 
 ```bash
 pip install -r requirements.txt
 python build_dataset.py   # downloads the data from PokeAPI (takes several minutes)
-python report.py          # embeddings, model, figures and interactive explorers
+python analysis.py          # embeddings, model, figures and interactive explorers
 ```
  
 Output goes to `data/`, `images/`, `docs/` and `results/`.
@@ -68,7 +68,7 @@ Output goes to `data/`, `images/`, `docs/` and `results/`.
 ```
 pokemon-type-from-text/
 ├── build_dataset.py
-├── report.py
+├── analysis.py
 ├── requirements.txt
 ├── data/      pokemon_all.csv, embeddings_all.npy
 ├── images/    figures used in this README
